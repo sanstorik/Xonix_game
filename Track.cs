@@ -18,6 +18,7 @@ public class Track {
     {
         closedAreas = new List<HashSet<BoardCell>>();
         closedAreaCount = -1;
+		
         adjacentCells = new Queue<BoardCell>();
         trackPoints = new List<BoardCell>();
         queueBreadthSearch = new Queue<BoardCell>();
