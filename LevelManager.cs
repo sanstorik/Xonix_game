@@ -166,7 +166,8 @@ public class LevelManager : MonoBehaviour {
     {
         get
         {
-            return enemyFiguresOnScene.Where(cell => cell.CellMoveType == BoardCellType.AQUA).Count();
+            return enemyFiguresOnScene.Select(cell => cell)
+                .Where(cell => cell.CellMoveType == BoardCellType.AQUA).Count();
         }
     }
 
